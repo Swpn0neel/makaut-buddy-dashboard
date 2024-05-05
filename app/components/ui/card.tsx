@@ -11,7 +11,7 @@ interface CardProps {
 
 export default function Card(props: CardProps) {
   return (
-    <div className="flex flex-col h-screen border-2 border-[#FFFFFF20] rounded-sm my-96 mx-40">
+    <div className="flex flex-col h-full border-2 border-[#FFFFFF20] rounded-lg">
       <div className="basis-9/12">
         <Title title={props.title} />
       </div>

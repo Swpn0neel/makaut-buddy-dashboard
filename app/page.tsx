@@ -1,12 +1,9 @@
-import Card from "./components/ui/card";
+import Dashboard from "./components/dashboard";
 
 export default function Home() {
   return (
     <main className="">
-      <Card
-        title="Projections of Solids"
-        description="How solids are classified and learn to draw the projection of solids..."
-      />
+      <Dashboard />
     </main>
   );
 }
