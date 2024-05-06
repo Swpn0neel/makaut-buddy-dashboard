@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const svgToDataUri = require("mini-svg-data-uri");
-
+const { nextui } = require("@nextui-org/react");
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -25,6 +25,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   darkmode: "class",
   theme: {
@@ -37,6 +38,7 @@ const config: Config = {
     },
   },
   plugins: [
+    nextui(),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(

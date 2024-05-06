@@ -1,9 +1,13 @@
+import * as React from "react";
+import { NextUIProvider } from "@nextui-org/react";
 import Dashboard from "./components/dashboard";
 
 export default function Home() {
   return (
     <main className="">
-      <Dashboard />
+      <NextUIProvider>
+        <Dashboard />
+      </NextUIProvider>
     </main>
   );
 }
